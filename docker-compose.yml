@@ -8,7 +8,6 @@ services:
       - ./back:/usr/src/app
     ports:
       - "4567:4567"
-    command: ruby app.rb
   front:
     build:
       context: ./front
