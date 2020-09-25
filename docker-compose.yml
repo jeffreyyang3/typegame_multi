@@ -1,13 +1,18 @@
-version: '3'
+version: "3"
 services:
   back:
     tty: true
     build:
       context: ./back
-    volumes: 
+    volumes:
       - ./back:/usr/src/app
     ports:
-      - '4567:4567'
+      - "4567:4567"
     command: ruby app.rb
-
-
+  front:
+    build:
+      context: ./front
+    volumes:
+      - ./front:/app
+    ports:
+      - "4568:4568"
