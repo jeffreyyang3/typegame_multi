@@ -12,7 +12,8 @@ module.exports = {
   devServer: {
     host: "0.0.0.0",
     port: 4568,
-    allowedHosts: ["blackjack98.xyz"],
+    disableHostCheck: true,
+    // allowedHosts: ["blackjack98.xyz", "localhost"],
     watchOptions: {
       poll: 1000,
       ignored: [

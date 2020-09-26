@@ -6,12 +6,22 @@ services:
       context: ./back
     volumes:
       - ./back:/usr/src/app
-    ports:
-      - "4567:4567"
+    # ports:
+    #   - "4567:4567"
   front:
     build:
       context: ./front
     volumes:
       - ./front:/app
+    # ports:
+    #   - "4568:4568"
+
+  nginx:
+    build:
+      context: ./nginx
     ports:
-      - "4568:4568"
+      - "80:80"
+    depends_on:
+      - front
+
+

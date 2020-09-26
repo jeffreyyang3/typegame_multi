@@ -1,0 +1,21 @@
+{
+  "name": "typegame_multi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devUp": "docker-compose up --build",
+    "devDown": "docker-compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyyang3/typegame_multi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreyyang3/typegame_multi/issues"
+  },
+  "homepage": "https://github.com/jeffreyyang3/typegame_multi#readme"
+}
