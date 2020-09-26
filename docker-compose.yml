@@ -11,8 +11,8 @@ services:
   front:
     build:
       context: ./front
-    volumes:
-      - ./front:/app
+    # volumes:
+    #  - ./front:/app
     # ports:
     #   - "4568:4568"
 
